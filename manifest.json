@@ -1,0 +1,35 @@
+{
+    "name": "Polygon utils",
+    "version": "1.0",
+    "description": "Extension for polygon.codeforces.com",
+    "permissions": [
+        "declarativeContent",
+        "storage"
+    ],
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/ejudge-16.png",
+            "32": "images/ejudge-32.png",
+            "48": "images/ejudge-48.png",
+            "128": "images/ejudge-128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "email.js"
+            ],
+            "matches": [
+                "https://polygon.codeforces.com/edit-commit?*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "images/ejudge-16.png",
+        "32": "images/ejudge-32.png",
+        "48": "images/ejudge-48.png",
+        "128": "images/ejudge-128.png"
+    },
+    "manifest_version": 2
+}
